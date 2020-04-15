@@ -9,7 +9,7 @@ class Prices extends React.Component {
     if(this.state.currency === 'USD') {
       list = <li className="list-group-item">
              Bitcoing rate for {this.props.bpi.USD.description}
-               : <span class="badge badge-primary">
+               : <span class="badge badge-primary width=device-width">
                    {this.props.bpi.USD.code}
                  </span>
                  <strong>{this.props.bpi.USD.rate}</strong>
@@ -17,7 +17,7 @@ class Prices extends React.Component {
     } else if(this.state.currency === 'GBP') {
         list = <li className="list-group-item">
         Bitcoing rate for {this.props.bpi.GBP.description}
-          : <span class="badge badge-primary">
+          : <span class="badge badge-primary width=device-width">
               {this.props.bpi.GBP.code}
             </span>
             <strong>{this.props.bpi.GBP.rate}</strong>
@@ -25,7 +25,7 @@ class Prices extends React.Component {
     } else if(this.state.currency === 'EUR') {
         list = <li className="list-group-item">
         Bitcoing rate for {this.props.bpi.EUR.description}
-          : <span class="badge badge-primary">
+          : <span class="badge badge-primary width=device-width">
               {this.props.bpi.EUR.code}
             </span>
             <strong>{this.props.bpi.EUR.rate}</strong>
